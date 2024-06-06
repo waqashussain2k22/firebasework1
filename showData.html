@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f2f5;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        #showData {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        #showData:hover {
+            background-color: #45a049;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 80%;
+            margin-top: 20px;
+        }
+
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        tr:hover {
+            background-color: #ddd;
+        }
+
+        .editBtn, .delBtn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 5px 10px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        .editBtn:hover, .delBtn:hover {
+            background-color: #45a049;
+        }
+
+        .delBtn {
+            background-color: #f44336;
+        }
+
+        .delBtn:hover {
+            background-color: #e53935;
+        }
+    </style>
+</head>
+<body>
+    <h1>Show Data</h1>
+
+    <button id="showData">Show Data</button>
+
+    <table id="tableData">
+        <tr>
+            <th>Name</th>
+            <th>Father Name</th>
+            <th>Age</th>
+            <th>Email</th>
+            <th>Mobile Number</th>
+            <th>Cnic</th>
+            <th>Qualification</th>
+            <th>Edit</th>
+            <th>Del</th>
+        </tr>
+    </table>
+
+    <script type="module" src="data.js"></script>
+</body>
+</html>
